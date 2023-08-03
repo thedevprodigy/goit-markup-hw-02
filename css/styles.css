@@ -10,14 +10,23 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--slate);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
 }
 
 /* General Styles */
-.button {
+.filter-button {
   cursor: pointer;
-  border: transparent;
+  color: var(--iris);
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--cloud, #f4f4fd);
   font-size: 16px;
   font-style: normal;
+  border-radius: 4px;
   font-weight: 500;
   line-height: 24px; /* 150% */
   letter-spacing: 0.64px;
@@ -36,24 +45,13 @@ body {
 .top-text {
   color: var(--navyblue);
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
   letter-spacing: 0.4px;
-}
-
-.bottom-text {
-  color: var(--slate);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
 }
 
 .section-title {
   font-size: 36px;
-  font-style: normal;
+  color: var(--navyblue);
   font-weight: 700;
   line-height: 40px; /* 111.111% */
   letter-spacing: 0.72px;
@@ -69,7 +67,6 @@ body {
   color: var(--iris, #4d5ae5);
   font-family: Raleway;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
   line-height: 21px; /* 116.667% */
   letter-spacing: 0.54px;
@@ -80,7 +77,6 @@ body {
   color: var(--navyblue, #2e2f42);
   font-family: Raleway;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
   line-height: 21px; /* 116.667% */
   letter-spacing: 0.54px;
@@ -89,20 +85,11 @@ body {
 
 .header-link {
   color: var(--navyblue);
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
 }
 
 .header-contact-link {
   color: var(--slate);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
 }
 
 .header-link:hover,
@@ -127,30 +114,39 @@ body {
 .hero-title {
   color: var(--white);
   font-size: 56px;
-  font-style: normal;
   font-weight: 700;
   line-height: 60px; /* 107.143% */
   letter-spacing: 1.12px;
 }
 
 .hero-button {
+  cursor: pointer;
   color: var(--white);
   background-color: var(--iris);
+  border-radius: 4px;
+  background: var(--iris, #4d5ae5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: orange;
-}
-
-.btn-primary {
-  color: var(--white);
   background-color: var(--ocean);
 }
 
-.btn {
-  color: var(--iris);
-  background-color: var(--cloud);
+.active-filter,
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+  border-color: var(--ocean);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .criteria {
@@ -173,7 +169,6 @@ body {
   color: var(--iris);
   font-family: Raleway;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
   line-height: 21px; /* 116.667% */
   letter-spacing: 0.54px;
@@ -184,7 +179,6 @@ body {
   color: var(--cloud, #f4f4fd);
   font-family: Raleway;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
   line-height: 21px; /* 116.667% */
   letter-spacing: 0.54px;
